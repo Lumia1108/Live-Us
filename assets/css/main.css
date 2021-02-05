@@ -1,0 +1,262 @@
+/**
+ * Live UI v1.0
+ */
+
+
+ @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+* {
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+    font-weight: lighter;
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+p {
+    padding: 0;
+    margin: 0;
+}
+h1, h2, h3, h4 {
+    margin: 0;
+    font-weight: bold;
+}
+
+.nav-bar {
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    background: white;
+    border-bottom: 2px solid #E0E0E0;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+}
+.nav-bar div {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 7px;
+    font-size: 20px;
+}
+.nav-bar div a {
+    color: #00C853;
+    text-decoration: none;
+    font-weight: bold;
+}
+.nav-bar-space {
+    height: 55px;
+}
+
+.none-link {
+    color: black;
+    text-decoration: none;
+}
+.img-link {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid #EEEEEE;
+}
+.stack-icon {
+    display: inline-block;
+    padding: 5px;
+    font-size: 60px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 1px solid #BDBDBD;
+}
+.stack-app {
+    display: inline-block;
+    padding: 5px;
+    font-size: 200px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 1px solid #BDBDBD;
+}
+#stack-widget {
+    font-size: 80px;
+}
+
+.main-layout {
+    padding: 5px;
+    margin: 0;
+}
+.layout-center {
+    text-align: center;
+}
+
+.point-bold {
+    font-weight: bold;
+}
+
+.card {
+    border-radius: 10px;
+    padding: 15px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.card h1 {
+    font-weight: bold;
+}
+.card .card-subtitle {
+    font-size: 20px;
+    font-weight: bold;
+}
+.card-green {
+    background: #69F0AE;
+    color: black;
+}
+.card-widget {
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    color: #1B5E20;
+}
+.card-purple {
+    background:#B388FF;
+    color: black;
+}
+.card-blue {
+    background:#90CAF9;
+    color: black;
+}
+.card a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.input-basic {
+    padding: 7px;
+    border-radius: 10px;
+    border: 2px solid #E0E0E0;
+    outline: none;
+    background: white;
+}
+.input-basic input {
+    border: none;
+    outline: none;
+    width: 90%;
+}
+.btn-basic {
+    background: white;
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    outline: none;
+}
+.btn-basic:active {
+    background: #E0E0E0;
+}
+.btn-circle {
+    width: 37.2px;
+    height: 37.2px;
+    border-radius: 50%;
+}
+
+.card-layout {
+    padding: 10px;
+}
+.grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.grid-layout div {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+}
+.grid-layout a {
+    text-decoration: none;
+}
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer-basic {
+    background: #EEEEEE;
+    color: #757575;
+}
+.footer-container {
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 80px;
+}
+.footer-basic a {
+    color: #757575;
+}
+.footer-bold {
+    color: #424242;
+    font-weight: bold;
+}
+
+
+.frame-youtube {
+    width: 100%;
+    height: 250px;
+}
+@media (max-width: 320px) {
+    .img-link {
+        width: 80px;
+        height: 80px;
+    }
+    .stack-app {
+        width: 70px;
+        height: 70px;
+        font-size: 50px;
+    }
+}
+@media (min-width: 720px) {
+    .nav-bar div {
+        width: 720px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .main-layout {
+        width: 720px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .grid-layout {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .grid-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 5px;
+        column-gap: 5px;
+    }
+    .grid-2 div {
+        margin: 0;
+    }
+    .frame-youtube {
+        height: 350px;
+    }
+    .footer-container {
+        width: 720px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media (min-width: 920px) {
+    .nav-bar div {
+        width: 920px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .main-layout {
+        width: 920px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .grid-layout {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    .frame-youtube {
+        height: 500px;
+    }
+    .footer-container {
+        width: 920px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

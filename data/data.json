@@ -1,0 +1,16 @@
+{
+    "installation": {
+        "isInstalled": 0,
+        "installSpace": ""
+    },
+    "channel": {
+        "youtube": "https://www.youtube.com/",
+        "twitch": "https://www.twitch.tv/",
+        "replay": "https://www.youtube.com/"
+    },
+    "user": {
+        "name": "Live Us",
+        "about": "This is text about your channel.",
+        "password": "admin1234"
+    }
+}
